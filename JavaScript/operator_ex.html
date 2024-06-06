@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>operator-+,-,*,/</title>
+</head>
+<body>
+enter no:<input type="text" id="tx1"/><br>
+enter no:<input type="text" id="tx2"/><br>
+
+operator:<select id="op">
+<option>+</option>
+<option>-</option>
+<option>*</option>
+<option>/</option>
+</select>
+<br>
+
+result:<input type="text" id="re"/>
+<br>
+
+<input type="button" value="ok" onclick="calculate()"/>
+
+<script type="text/javascript">
+function calculate()
+{
+var n1=parseInt(document.getElementById("tx1").value);
+var n2=parseInt(document.getElementById("tx2").value);
+var n3;
+var opt=document.getElementById("op").value;
+switch(opt)
+{
+case "+": n3=n1+n2;
+	  break;
+case "-": n3=n1-n2;
+	  break;
+case "*": n3=n1*n2;
+	  break;
+case "/": n3=n1/n2;
+	  break;
+}
+document.getElementById("re").value=n3;
+}
+</script>
+</body>
+</html>

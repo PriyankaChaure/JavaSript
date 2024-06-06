@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>css style on div</title>
+</head>
+<body>
+<div id="dv" style="font-size:20;">Welcome to div</div>
+color:<select id="c">
+<option>red</option>
+<option>green</option>
+<option>blue</option>
+<option>yellow</option>
+</select>
+<br>
+
+<input type="radio" name="rd" id="rd1" value="1"/>foreground
+<input type="radio" name="rd" id="rd2" value="2"/>background
+<br>
+Enter No:<input type="text" id="no"/>
+<br>
+
+<input type="radio" name="r" id="rd3" value="3"/>width
+<input type="radio" name="r" id="rd4" value="4"/> height
+<br>
+
+<input type="button" value="Ok" onclick="changedv()"/>
+
+<script type="text/javascript">
+function changedv()
+{
+var v=document.getElementById("dv");
+if(document.getElementById("rd1").checked)
+{
+ v.style.color=document.getElementById("c").value;
+}
+else if(document.getElementById("rd2").checked)
+{
+v.style.backgroundColor=document.getElementById("c").value;
+}
+
+
+var v1=document.getElementById("dv");
+if(document.getElementById("rd3").checked)
+{
+ v.style.fontSize=document.getElementById("no").value;
+}
+else if(document.getElementById("rd4").checked)
+{
+v.style.fontSize=document.getElementById("no").value;
+}
+}
+</script>
+</body>
+</html>

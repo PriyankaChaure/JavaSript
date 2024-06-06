@@ -1,0 +1,31 @@
+<html>
+<head> 
+<title>Addition&Substraction</title>
+</head>
+<body>
+Enter No:<input type="text" id="text1" /><br>
+Enter No:<input type="text" id="text2" /><br>
+result:<input type ="text" id="res"/><br>
+
+<input type="button" value="Addition" onclick="addnum()"/>
+<input type="button" value=" Substraction" onclick="subnum()"/>
+
+<script type="text/javascript">
+function addnum()
+{
+var n1=parseInt(document.getElementById("text1").value);
+var n2=parseInt(document.getElementById("text2").value);
+var n3=n1+n2;
+document.getElementById("res").value=n3;
+}
+
+function subnum()
+{
+var n1=parseInt(document.getElementById("text1").value);
+var n2=parseInt(document.getElementById("text2").value);
+var r=n1-n2;
+document.getElementById("res").value=r;
+}
+</script>
+</body>
+</html>

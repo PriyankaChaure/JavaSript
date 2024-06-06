@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>calculate marks & percentage</title>
+</head>
+<body>
+<script type="text/javascript">
+var p=parseInt(prompt("enter physics marks:"));
+var c=parseInt(prompt("enter chemistry marks:"));
+var m=parseInt(prompt("enter maths marks:"));
+var b=parseInt(prompt("enter biology marks:"));
+var e=parseInt(prompt("enter english marks:"));
+var tm=p+c+m+b+e;
+var per=tm/5;
+alert("total marks is:"+tm+"percentage is:"+per);
+if(per>=70)
+{
+alert("distinction class!!!"); 
+}
+else if(per>=60)
+{
+alert("first class!!!"); 
+}
+else if(per>=50)
+{
+alert("second class!!!"); 
+}
+else if(per>=40)
+{
+alert("pass!!!"); 
+}
+else
+{
+alert("failed!!!");
+}
+
+</script>
+</body>
+</html>

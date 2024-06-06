@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Css Style</title>
+</head>
+<body>
+<div id="dv" style="background-color:yellow;color:red;font-size:12px;width:120px;height:40px;">
+Welcome to Div
+</div>
+<input type="button" value="read" onclick="xyz()"/>
+<input type="button" value=" write" onclick="wr()"/>
+
+<script type="text/javascript">
+function xyz()
+{
+var v=document.getElementById("dv");
+alert(v.style.backgroundColor);
+alert(v.style.color);
+alert(v.style.fontSize);
+alert(v.style.width);
+alert(v.style.height);
+}
+
+function wr()
+{
+var v=document.getElementById("dv");
+v.style.backgroundColor="skyblue";
+v.style.color="white";
+v.style.fontSize="24px";
+v.style.width="200";
+v.style.height="200";
+}
+</script>
+</body>
+</html>

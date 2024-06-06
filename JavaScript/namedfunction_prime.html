@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>named function-prime no check</title>
+</head>
+<body>
+<script type="text/javascript">
+function primenocheck(n)
+{ 
+  for(var i=2;i<n;i++)
+    {
+       if(n%i==0)
+         {
+	   return false;
+	   break;
+	 }
+    }
+ return true;
+}
+var r=primenocheck(44);
+alert('prime no:'+r);
+
+</script>
+</body>
+</html>

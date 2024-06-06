@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>add-all,even,odd</title>
+</head>
+<body>
+enter no:<input type="text" id="tx"/><br>
+
+result:<input type="text" id="re"/><br>
+
+<input type="radio" name="r" value="1" id="r1"/>All
+<input type="radio" name="r" value="2" id="r2"/>Even
+<input type="radio" name="r" value="3" id="r3"/>Odd
+<br>
+
+<input type="button" value="ok" onclick="adddigit()"/>
+
+<script type="text/javascript">
+function adddigit()
+{
+var dig,sum;
+var num=parseInt(document.getElementById("tx").value);
+if(document.getElementById("r1").checked)
+{
+sum=0;
+while(num!=0)
+{
+dig=num%10;
+sum=sum+dig;
+num=parseInt(num/10);
+}
+}
+
+else if(document.getElementById("r2").checked)
+{
+sum=0;
+while(num!=0)
+{
+dig=num%10;
+if(dig%2==0)
+{
+sum=sum+dig;
+}
+num=parseInt(num/10);
+}
+}
+
+
+else if(document.getElementById("r3").checked)
+{
+sum=0;
+while(num!=0)
+{
+dig=num%10;
+if(dig%2!=0)
+{
+sum=sum+dig;
+}
+num=parseInt(num/10);
+}
+}
+
+document.getElementById("re").value=sum;
+}
+</script>
+</body>
+</html>

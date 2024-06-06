@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>div style color</title>
+</head>
+<body>
+<div id="dv">Welcome to div</div>
+
+Fore Ground:<select id="fc">
+<option>red</option>
+<option>green</option>
+<option>blue</option>
+<option>yellow</option>
+</select><br>
+
+Back Ground:<select id="bc">
+<option>orange</option>
+<option>skyBlue</option>
+<option>pink</option>
+<option>tomato</option>
+</select><br>
+
+Font Size:<select id="fs">
+<option>10</option>
+<option>20</option>
+<option>30</option>
+<option>40</option>
+<option>50</option>
+</select><br>
+
+<input type="button" value="ok" onclick="changeopt()"/><br>
+<script type="text/javascript">
+
+function changeopt()
+{
+var v=document.getElementById("dv");
+v.style.color=document.getElementById("fc").value;
+v.style.backgroundColor=document.getElementById("bc").value;
+v.style.fontSize=document.getElementById("fs").value;
+
+}
+</script>
+</body>
+</html>

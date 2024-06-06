@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Date time function in javascript</title>
+</head>
+<body>
+<script type="text/javascript">
+var dt=new Date();
+document.write(dt+"<br>");
+document.write("Day of week:"+dt.getDay()+"<br>");
+document.write("date:"+dt.getDate()+"<br>");
+document.write("month:"+dt.getMonth()+"<br>");
+document.write("Year:"+dt.getFullYear()+"<br>");
+document.write("hours:"+dt.getHours()+"<br>");
+document.write("minutes:"+dt.getMinutes()+"<br>");
+document.write("seconds:"+dt.getSeconds()+"<br>");
+document.write("time:"+dt.getTime()+"<br>");
+
+dt.setDate(14);
+dt.setMonth(11);
+dt.setYear(2020);
+document.write("after set time:"+dt+"<br>");
+
+
+var dt1=new Date(2025,5,28,4,40,40);
+document.write(dt1);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>armstrong no using div</title>
+</head>
+<body>
+<form>
+Enter Start No:<input type="text" id="sn"/><br>
+Enter End No:<input type="text" id="en"/><br>
+Result:<div id="dv" style="width:140;height:20;border:1px solid black; position:absolute;top:50;left:60;"></div><br>
+<input type="button" value="Ok" onclick="Armstrong()"/>
+</form>
+<script type="text/javascript">
+function Armstrong()
+{
+var s=parseInt(document.getElementById("sn").value);
+var e=parseInt(document.getElementById("en").value);
+for(var i=s;i<=e;i++)
+{ 
+ 
+var sum=0;
+var temp=i
+while(temp>0)
+{
+var dig=temp%10;
+sum=sum+( dig*dig*dig*dig);
+temp=parseInt(temp/10);
+}
+if(i==sum)
+{
+alert(i);
+document.getElementById("dv").innerText=i;
+  
+}
+}
+}
+</script>
+</body>
+</html>

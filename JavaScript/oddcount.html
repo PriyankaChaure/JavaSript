@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>count of odd digits</title>
+</head>
+<body>
+<script type="text/javascript">
+var n,dig,cnt=0;
+n=parseInt(prompt("enter number:"));
+while(n!=0)
+{
+dig=n%10;
+if(n%2!=0)
+{
+cnt++
+}
+n=parseInt(n/10);
+}
+alert("count of odd number is:"+cnt);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>java_Script_exam</title>
+</head>
+<body>
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:100;left:200;" onclick="squarefn(this)">1</div>
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:120;left:200;" onclick="squarefn(this)">2</div>
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:140;left:200;" onclick="squarefn(this)">3</div>
+
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:100;left:230;" onclick="squarefn(this)">4</div>
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:120;left:230;" onclick="squarefn(this)">5</div>
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:140;left:230;" onclick="squarefn(this)">6</div>
+
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:100;left:260;" onclick="squarefn(this)">7</div>
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:120;left:260;" onclick="squarefn(this)">8</div>
+<div id="dv" style="width:30; heigth:30; border:1px solid black; position:absolute; top:140;left:260;" onclick="squarefn(this)">9</div>
+
+<script type="text/javascript">
+
+function squarefn(sq)
+{ 
+var n=sq.innerText;
+sq.innerText=n*n;
+}
+/* this function is used for without this keyword
+function squarefn1()
+{
+var n=document.getElementById("dv1").innerText;
+document.getElementById("dv1").innerText=n*n;;
+}*/
+</script>
+</body>
+</html>

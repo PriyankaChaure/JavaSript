@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>exam</title>
+</head>
+<body>
+<div>
+<div id="dv1" style="width:50px;height:50px;position:absolute;left:200px;top100px;border:2px solid black;"></div>
+<div id="dv2" style="width:50px;height:50px;position:absolute;left:250px;top100px ;border:2px solid black;"></div>
+<div id="dv3" style="background-color:blue;width:50px;height:50px;position:absolute;left:300px;top100px;border:2px solid black;"></div>
+<div id="dv4" style="width:50px;height:50px;position:absolute;left:350px;top100px;border:2px solid black;"></div>
+<div id="dv5" style="width:50px;height:50px;position:absolute;left:400px;top100px;border:2px solid black;"></div>
+
+</div>
+<br><br><br><br>
+
+<input type="radio" id="rd1" name="r"/> Right 
+<input type="radio" id="rd2" name="r"/> Left   <br>
+<input type="Submit" value="Ok" onclick="ChangePosition()" />
+<script type="text/javascript">
+ function ChangePosition()
+{
+Color=document.getElementById("dv3").style.backgroundColor;
+ if(document.getElementById("rd1").checked)
+{ 
+  MoveRight(Color);
+}
+else
+if(document.getElementById("rd2").checked)
+{
+ MoveLeft(Color);
+}
+}
+
+function MoveRight(Color)
+{
+ var dv4col=document.getElementById("dv4").style.backgroundColor;
+ var dv5col=document.getElementById("dv5").style.backgroundColor;
+ var dv1col=document.getElementById("dv1").style.backgroundColor;
+ var dv2col=document.getElementById("dv2").style.backgroundColor;
+ document.getElementById("dv4").style.backgroundColor=Color;
+ document.getElementById("dv5").style.backgroundColor=dv4col;
+ document.getElementById("dv1").style.backgroundColor=dv5col;
+ document.getElementById("dv2").style.backgroundColor=dv1col;
+ document.getElementById("dv3").style.backgroundColor=dv2col;
+}
+function MoveLeft(Color)
+{
+ var dv1col=document.getElementById("dv1").style.backgroundColor;
+ var dv2col=document.getElementById("dv2").style.backgroundColor;
+ var dv4col=document.getElementById("dv4").style.backgroundColor;
+ var dv5col=document.getElementById("dv5").style.backgroundColor;
+ document.getElementById("dv2").style.backgroundColor=Color;
+ document.getElementById("dv1").style.backgroundColor=dv2col;
+ document.getElementById("dv5").style.backgroundColor=dv1col;
+ document.getElementById("dv4").style.backgroundColor=dv5col;
+ document.getElementById("dv3").style.backgroundColor=dv4col;
+}
+</script>
+</body>
+</html>
+
+ 

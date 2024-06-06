@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM inner text Property</title>
+</head>
+<body>
+<div id="dv">welcome to <b><i><u>inner text</u></i></b> dom</div><br>
+<input type="button" value="read" onclick="readdv()"/>
+<input type="button" value="write" onclick="writedv()"/><br>
+
+<script type="text/javascript">
+function readdv()
+{
+var v=document.getElementById("dv");
+alert(v.innerText);
+alert(v.innerHTML);
+}
+
+function writedv()
+{
+var v=document.getElementById("dv");
+v.innerText =  "this is used for write new text in the div!!!"; 
+}
+
+</script>
+</body>
+</html>

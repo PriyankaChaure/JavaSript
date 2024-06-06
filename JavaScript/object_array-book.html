@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>array of object-book</title>
+</head>
+<book>
+<script type="text/javascript">
+var book=[{}];
+for(var i=0;i<3;i++)
+{
+var bid=parseInt(prompt("enter book id:"));
+var bn=prompt("enter book name:");
+var an=prompt("enter author name:");
+var bpr=parseInt(prompt("enter book price:"));
+book[i]={"bookid":bid,"bookname":bn,"authorname":an,"bookprice":bpr};
+}
+for(var i=0;i<3;i++)
+{
+if(book[i].bookprice>500)
+{
+alert("book id:"+book[i].bookid);
+alert("book name:"+book[i].bookname);
+alert("book author name:"+book[i].authorname);
+alert("book price:"+book[i].bookprice);
+}
+}
+</script>
+</book>
+</html>
